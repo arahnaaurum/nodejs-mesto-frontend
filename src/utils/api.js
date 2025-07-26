@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://localhost:3000');
+  const api = new Api('http://89.169.176.100');
   
   export default api;
   
