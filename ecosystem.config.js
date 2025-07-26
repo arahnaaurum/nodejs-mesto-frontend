@@ -13,7 +13,7 @@ module.exports = {
       repo: `https://${GIT_TOKEN}@${DEPLOY_REPOSITORY}`,
       path: DEPLOY_PATH,
       'pre-deploy-local': `scp -v .env.deploy ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_PATH}`,
-      'post-deploy': 'npm i && --openssl-legacy-provider npm run build',
+      'post-deploy': 'npm i && NODE_OPTIONS=--openssl-legacy-provider npm run build',
     },
   },
 };
