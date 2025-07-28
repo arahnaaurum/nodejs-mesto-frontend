@@ -139,7 +139,7 @@ class Api {
   }
   }
   // Замените на адрес вашего бэкенда
-  const api = new Api('http://89.169.176.100');
+  const api = new Api('https://api.mestoproject.students.nomorepartiessbs.ru');
   
   export default api;
   
