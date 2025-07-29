@@ -121,6 +121,7 @@ class Api {
   login(email, password) {
     return fetch(`${this._address}/signin`, {
       method: 'POST',
+      credentials: 'include',
       headers: {
         'Content-Type': 'application/json'
       },
